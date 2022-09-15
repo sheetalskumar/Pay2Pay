@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "83912264819",
+    "firebase_url": "https://pay2pay-fyp-default-rtdb.firebaseio.com",
+    "project_id": "pay2pay-fyp",
+    "storage_bucket": "pay2pay-fyp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:83912264819:android:83233917770c04a63a2e06",
+        "android_client_info": {
+          "package_name": "com.example.pay2pay"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "83912264819-98tms2bbl52uhp5vvm444qp3mvhr0re7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBMCMIXQwMZ70iWiooS_HZh6sxYY2i7E4o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "83912264819-98tms2bbl52uhp5vvm444qp3mvhr0re7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
