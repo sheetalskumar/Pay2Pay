@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2023 Sheetal Kumar. All rights reserved.
+  ~ This work is done by Sheetal Kumar and is owned by Sheetal Kumar.
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    tools:context=".editDBexpensesActivity" >
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="186dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo_transparent" />
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/logoImage"
+        android:text="New \nExpense"
+        android:textColor="#0465b1"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/expenseName"
+        android:layout_below="@id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Expense Name:"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/expensename"
+        android:layout_below="@id/expenseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="17dp"
+        android:hint="Name for your expense.."/>
+
+    <TextView
+        android:id="@+id/expenseAmount"
+        android:layout_below="@id/expensename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Expense Amount:"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/expenseamount"
+        android:layout_below="@id/expenseAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="17dp"
+        android:hint="The amount of your expense.."/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/frequencyspinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/expenseamount"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/frequency"
+        android:textSize="17dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_complete_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="none" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="520dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Back"
+        android:textSize="15dp"
+        android:backgroundTint="#a6a1a1"/>
+
+    <Button
+        android:id="@+id/addexpensebutton"
+        android:layout_below="@id/back"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Add Expense"
+        android:textSize="20dp"
+        android:backgroundTint="#0094ff"/>
+
+</RelativeLayout>

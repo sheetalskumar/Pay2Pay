@@ -1,0 +1,13 @@
+<!--
+  ~ Copyright (c) 2023 Sheetal Kumar. All rights reserved.
+  ~ This work is done by Sheetal Kumar and is owned by Sheetal Kumar.
+  -->
+
+<resources>
+    <string name="app_name">Pay2Pay</string>
+    <string name="frequency">Select Expense Frequency</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="summary">Summary</string>
+
+</resources>

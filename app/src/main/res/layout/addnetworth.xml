@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2023 Sheetal Kumar. All rights reserved.
+  ~ This work is done by Sheetal Kumar and is owned by Sheetal Kumar.
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp"
+    tools:context=".editDBnetworthActivity" >
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="186dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logo_transparent" />
+
+    <TextView
+        android:id="@+id/pageTitle"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/logoImage"
+        android:text="New \nAsset"
+        android:textColor="#0465b1"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/networthName"
+        android:layout_below="@id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Asset Name:"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/networthname"
+        android:layout_below="@id/networthName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="17dp"
+        android:hint="Name of your Asset.."/>
+
+    <TextView
+        android:id="@+id/networthAmount"
+        android:layout_below="@id/networthname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:text="Asset Value:"
+        android:textSize="17dp" />
+
+    <EditText
+        android:id="@+id/networthamount"
+        android:layout_below="@id/networthAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="17dp"
+        android:hint="Value of your Asset.."/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="520dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Back"
+        android:textSize="15dp"
+        android:backgroundTint="#a6a1a1"/>
+
+    <Button
+        android:id="@+id/addnetworthbutton"
+        android:layout_below="@id/back"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Add to Networth"
+        android:textSize="20dp"
+        android:backgroundTint="#0094ff"/>
+
+</RelativeLayout>

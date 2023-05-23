@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Copyright (c) 2023 Sheetal Kumar. All rights reserved.
+  ~ This work is done by Sheetal Kumar and is owned by Sheetal Kumar.
+  -->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppTesting"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".accountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".calculation_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".addDBnetworthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Networth"
+            android:exported="false" />
+        <activity
+            android:name=".NetworthAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".displayDBnetworthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".editDBnetworthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addDBsavingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Savings"
+            android:exported="false" />
+        <activity
+            android:name=".SavingsAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".displayDBsavingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".editDBsavingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".addDBexpensesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Expense"
+            android:exported="false" />
+        <activity
+            android:name=".ExpenseAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".displayDBexpenseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".editDBexpensesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".createAccount_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".signIn_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
