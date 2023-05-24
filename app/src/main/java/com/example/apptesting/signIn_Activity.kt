@@ -52,7 +52,7 @@ class signIn_Activity : AppCompatActivity() {
             email.setHorizontallyScrolling(true);
             password.setHorizontallyScrolling(true);
 
-            createaccount_button = findViewById<Button>(R.id.createaccount)
+            createaccount_button = findViewById(R.id.createaccount)
             createaccount_button.setOnClickListener {
                 openCreateAccount()
             }
